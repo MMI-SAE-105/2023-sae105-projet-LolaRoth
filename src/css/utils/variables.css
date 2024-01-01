@@ -1,0 +1,9 @@
+:root{
+--background-color: #070707;
+--rouge: #FF0000;
+--gris-clair: #EAEAEA;
+--blanc-texte: #EEE3E3;
+--noir-texte: #010101;
+--jaune: #F5E23A;
+--header-color: linear-gradient(90deg, rgba(3,70,98,1) 100%, rgba(0,0,0,0) 100%);
+}
