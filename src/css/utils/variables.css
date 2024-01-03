@@ -5,5 +5,21 @@
 --blanc-texte: #EEE3E3;
 --noir-texte: #010101;
 --jaune: #F5E23A;
---header-color: linear-gradient(90deg, rgba(3,70,98,1) 100%, rgba(0,0,0,0) 100%);
+--header-color: linear-gradient(90deg, rgba(3,70,98,1) 0%, rgba(0,0,0,0) 50%);
+
+--space0x: 5px;
+--space1x: 10px;
+--space2x: 20px;
+--space3x: 30px;
+--space4x: 40px;
+--space5x: 50px;
+
+--title-xxl: 2.25rem; /* Logo + titre page*/
+--title-xl: 1.125rem; /* Sous titre des articles*/
+--titre-s: 0.875rem; /* corps */
+--text-xs: 0.688rem; /* texte footer + description images */
+
+
+--font-family: 'Mulish', sans-serif;
+--font-family: 'Rambla', sans-serif;
 }
