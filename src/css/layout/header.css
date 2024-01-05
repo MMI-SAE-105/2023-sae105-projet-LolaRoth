@@ -1,0 +1,32 @@
+.header{
+    background-color: var(--background-color);
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+.header__elt{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--space3x) var(--space2x);
+    
+}
+
+.header__titre{
+    font-family: Bebas Neue;
+    font-size: var(--title-xxl);
+    color: var(--rouge);
+    text-align: center;
+    margin-left: var(--space5x);
+}
+
+.header__logo{
+    margin-left: 60px;
+    right: var(--space4px);
+    
+}
+
+.header__accueil{
+    width: var(--space4x); 
+    height: var(--space4x); 
+}
