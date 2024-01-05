@@ -4,6 +4,7 @@
 @import "base/media.css";
 @import "base/main.css";
 @import "utils/variables.css";
+@import "components/index.css";
 
 @import "layout/header.css";
 

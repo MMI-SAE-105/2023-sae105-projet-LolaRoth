@@ -1,0 +1,62 @@
+body{
+    background-color: var(--background-color);
+    position: absolute;
+}
+
+.citation__titre{
+    font-family: Rambla;
+    font-size: var(--texte-xxl);
+    color: var(--blanc-texte);
+    text-align: center;
+    width: 277px;
+    height: var(--space5x);
+    margin-top: 15px;
+    padding-left: var(--space5x);
+}
+
+.citation__sous--titre{
+    font-family: Mulish;
+    font-style: light;
+    color: var(--blanc-texte);
+    font-style: italic;
+    font-size: var(--texte-s);
+    padding-left: 300px;
+}
+
+.intro__texte{
+    color: var(--blanc-texte);
+    font-family: Mulish;
+    font-size: var(--texte-xs);
+    text-align: center;
+    height: 100px;
+    width: 300px;
+    padding-left: 80px;
+    margin-top: var(--space2x);
+}
+
+.losange{
+    margin-left: 350px;
+}
+
+.losange2{
+    padding-left: var(--space3x);
+    margin-top: var(--space2x);
+}
+
+.losange3{
+    padding-left: 400px;
+    
+}
+
+.article__texte{
+    color: var(--noir-texte);
+    font-family: Mulish;
+    font-style: light;
+    font-size: var(--texte-s);
+    background-color: var(--gris-clair);
+    border-radius: 16px;
+    padding: var(--space2x);
+    margin-top: var(--space2x);
+    margin-left: 15px;
+    margin-right: 15px;
+}
