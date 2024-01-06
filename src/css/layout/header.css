@@ -2,6 +2,9 @@
     background-color: var(--background-color);
     box-sizing: border-box;
     max-width: 100%;
+    transition: height 0.5s ease;
+    display: flex;
+    flex-direction: column;
 }
 
 .header__elt{
@@ -24,9 +27,39 @@
     margin-left: 60px;
     right: var(--space4px);
     
+    
 }
 
 .header__accueil{
     width: var(--space4x); 
     height: var(--space4x); 
 }
+
+
+.header_menuBtn{
+    cursor: pointer;
+    text-decoration: none;
+    background: none;
+    border: none;
+}
+
+.header.open{
+    height: 200px;
+}
+
+.text_menu a {
+    text-decoration: none; /* Ajouté */
+    color: inherit; /* Ajouté */
+    
+  }
+
+
+.text_menu{
+    color: var(--blanc-texte);
+    font-family: Mulish;
+    font-style: semi-bold;
+    font-size: var(--text-xs);
+    list-style-type: none;
+    line-height: 50px;
+}
+

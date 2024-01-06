@@ -1,21 +1,42 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen}">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Page d'accueil</title>
     <link rel="stylesheet" href="/src/css/style.css">
-    <script
-      defer=""
-      src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"
-    ></script>
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
   </head>
   <body>
     <header class="header">
         <div class="header__elt">
+        <a href="/index.html">
         <img class="header__accueil" src="/public/icones/home.svg" alt="logo accueil">
+        </a>
         <p class="header__titre">Senseception</p>
+        <button 
+        aria-controls="mainNav"
+        @click="menuIsOpen = ! menuIsOpen"
+        class="header_menuBtn">
         <img class="header__logo" src="/public/icones/Menu.svg" alt="Menu hamburger">
+        </button>
+
+        <nav
+        id="mainNav"
+        x-show="menuIsOpen"
+        x-transition.duration.800ms
+        class="menu">
+
+        <ul class="categorie">
+            <li class="text_menu"><a href="/fr/replique.html">Réplique</a></li>
+            <li class="text_menu"><a href="/fr/realisation.html">Réalisation</a></li>
+            <li class="text_menu"><a href="/fr/inception.html">Inception</a></li>
+            <li class="text_menu"><a href="/fr/musique.html">Côté musical</a></li>
+            <li class="text_menu"><a href="/fr/glossaire.html">Glossaire</a></li>
+            <li class="text_menu"><a href="/fr/autres_projets.html">Autres projets</a></li>
+        </ul>
+
+        </nav>
         </div>
     </header>
 
@@ -39,7 +60,9 @@
         A travers l’univers complexe et fascinant d’Inception, découvrez comment
         cette réplique à propos des émotions à marqué les esprits
       </p>
+      <a href="/fr/replique.html">
       <img class="article__bouton--dif" src="/public/icones/Bouton_lire-plus.svg" alt="Bouton lire plus">
+        </a>
     </div>
 
     <div class="article">
@@ -48,7 +71,9 @@
         Dans cet article, plongeons dans l’univers de Christopher Nolan, un
         réalisateur qui a redéfinit les règles du jeu.
       </p>
-      <img class="article__bouton" src="/public/icones/Bouton_lire-plus.svg" alt="Bouton lire plus">
+      <a class="article__bouton" href="/fr/realisation.html">
+      <img  src="/public/icones/Bouton_lire-plus.svg" alt="Bouton lire plus">
+      </a>
     </div>
 
     <div class="article">
@@ -58,7 +83,9 @@
         a su captiver et intriguer les amoureux d’histoire complexe et hors du
         commun
       </p>
-      <img class="article__bouton" src="/public/icones/Bouton_lire-plus.svg" alt="Bouton lire plus">
+      <a class="article__bouton" href="/fr/inception.html">
+      <img  src="/public/icones/Bouton_lire-plus.svg" alt="Bouton lire plus">
+      </a>
     </div>
 
     <div class="article">
@@ -67,7 +94,9 @@
         Dans cet article, nous explorerons la façon dont “Time” par Hans Zimmer,
         nous a pleinement plonger dans l’univers du film.
       </p>
-      <img class="article__bouton" src="/public/icones/Bouton_lire-plus.svg" alt="Bouton lire plus">
+      <a class="article__bouton" href="/fr/musique.html">
+      <img  src="/public/icones/Bouton_lire-plus.svg" alt="Bouton lire plus">
+      </a>
     </div>
 
     <div class="article">
@@ -77,15 +106,21 @@
         d’inspiration à Christopher Nolan pour créer ce chef-d’œuvre
         cinématographique complexe
       </p>
-      <img class="article__bouton" src="/public/icones/Bouton_lire-plus.svg" alt="Bouton lire plus">
+      <a class="article__bouton" href="/fr/livre.html">
+      <img  src="/public/icones/Bouton_lire-plus.svg" alt="Bouton lire plus">
+      
     </div>
+</a>
     </div>
 
     
   </body>
   <footer class="footer">
     <div class="footer__elt">
-    <p class="footer__lien">A propos</p>
+    
+    <a class="footer__lien" href="/fr/a_propos.html">
+    A propos
+    </a>
 
     <p class="footer__texte--m">Lola Roth MMI B1</p>
 
@@ -94,7 +129,9 @@
       de Montbéliard
     </p>
 
-    <p class="footer__lien">Contact</p>
+    <a class="footer__lien" href="/fr/contact.html">
+    Contact
+    </a>
     <hr>
 
     <p class="footer__texte">
@@ -103,9 +140,17 @@
     </p>
     </div>
     <div class="footer__logos">
-    <img src="/public/icones/instagram.svg" alt="logo instagram">
-    <img src="/public/icones/MMI_blanc.svg" alt="logo département MMI">
-    <img src="/public/icones/twitter.svg" alt="logo twitter">
+    <a href="https://www.instagram.com/mmi_montbeliard/?hl=en">
+        <img src="/public/icones/instagram.svg" alt="logo instagram">
+    </a>
+
+    <a href="https://mmimontbeliard.com/">
+        <img src="/public/icones/MMI_blanc.svg" alt="logo département MMI">
+    </a>
+
+    <a href="https://twitter.com/MMImontbeliard">
+        <img src="/public/icones/twitter.svg" alt="logo twitter">
+    </a>
     </div>
   </footer>
   
