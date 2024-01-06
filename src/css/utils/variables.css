@@ -6,7 +6,7 @@
 --noir-texte: #010101;
 --jaune: #F5E23A;
 --bleu: #034662;
---header-color: linear-gradient(to top,  rgba(0,0,0,0) 0%, rgba(3,70,98,1) 20%);
+--header-color: linear-gradient(to top,  rgba(0,0,0,0) 0%, rgba(3,70,98,1) 100%);
 
 --space0x: 5px;
 --space1x: 10px;

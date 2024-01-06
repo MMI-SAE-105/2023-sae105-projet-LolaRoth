@@ -8,6 +8,37 @@
     <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
 </head>
 <body>
+    <header class="header">
+        <div class="header__elt">
+        <a href="/index.html">
+        <img class="header__accueil" src="/public/icones/home.svg" alt="logo accueil">
+        </a>
+        <p class="header__titre">Senseception</p>
+        <button 
+        aria-controls="mainNav"
+        @click="menuIsOpen = ! menuIsOpen"
+        class="header_menuBtn">
+        <img class="header__logo" src="/public/icones/Menu.svg" alt="Menu hamburger">
+        </button>
+
+        <nav
+        id="mainNav"
+        x-show="menuIsOpen"
+        x-transition.duration.800ms
+        class="menu">
+
+        <ul class="categorie">
+            <li class="text_menu"><a href="/fr/replique.html">Réplique</a></li>
+            <li class="text_menu"><a href="/fr/realisation.html">Réalisation</a></li>
+            <li class="text_menu"><a href="/fr/inception.html">Inception</a></li>
+            <li class="text_menu"><a href="/fr/musique.html">Côté musical</a></li>
+            <li class="text_menu"><a href="/fr/glossaire.html">Glossaire</a></li>
+            <li class="text_menu"><a href="/fr/autres_projets.html">Autres projets</a></li>
+        </ul>
+
+        </nav>
+        </div>
+    </header>
     <h2>Rédigé le 7/12/2023
         Par : Lola ROTH
     </h2>

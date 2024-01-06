@@ -1,5 +1,5 @@
 .header{
-    background-color: var(--background-color);
+    background: var(--header-color);
     box-sizing: border-box;
     max-width: 100%;
     transition: height 0.5s ease;
