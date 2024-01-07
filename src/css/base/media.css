@@ -7,3 +7,15 @@
     border-radius: 5px;
     margin: 5vw;
 }
+
+.article__image__livre{
+    max-width: 40%;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.article__image--livre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

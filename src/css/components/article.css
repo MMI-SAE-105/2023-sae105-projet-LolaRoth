@@ -42,7 +42,7 @@
     font-size: var(--title-s);
     color: var(--blanc-texte);
     margin-top: 5vw;
-    margin-left: 3vw;
+    margin-left: 5vw;
     
 }
 
@@ -77,3 +77,4 @@
   align-items: center;
   margin-top: 10px;
 }
+
