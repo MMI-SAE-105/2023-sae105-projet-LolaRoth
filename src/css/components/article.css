@@ -68,3 +68,12 @@
     margin-bottom: 10vw;
     margin-left: 60vw;
 }
+
+
+
+.bouton__article{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
