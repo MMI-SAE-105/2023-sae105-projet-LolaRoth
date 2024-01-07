@@ -25,6 +25,7 @@
     margin-top: 5vw;
     margin-left: 5vw;
     margin-right: 5vw;
+    
 }
 
 
@@ -41,7 +42,7 @@
     font-family: Mulish;
     font-size: var(--title-s);
     color: var(--blanc-texte);
-    margin-top: 5vw;
+    margin-top: 10vw;
     margin-left: 5vw;
     
 }
@@ -78,11 +79,5 @@
   margin-top: var(--space1x);
 }
 
-.bouton__article--contact{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: var(--space2x);
-    margin-bottom: var(--space2x);
-}
+
 

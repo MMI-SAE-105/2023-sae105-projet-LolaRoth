@@ -1,46 +1,57 @@
 .formulaire{
     font-family: Mulish;
     font-size: var(--title-s);
-    color: var(--noir-texte);
+    color: var(--blanc-texte);
     margin-top: 5vw;
     margin-left: 5vw;
     display: flex;
     justify-content: center;
-    margin-bottom: 40px;
+    margin-bottom: var(--space4x);
 }
 
 .formulaire__titre{
     font-family: Rambla;
     font-style: bold;
     font-size: var(--title-xxl);
-    color: var(--noir-texte);
+    color: var(--blanc-texte);
     text-align: center;
+    margin-top: var(--space2x);
 }
 
 .formulaire__nom{
     font-family: Mulish;
     font-size: var(--title-s);
     color: var(--blanc-texte);
-    margin-left: 10px;
-    margin-bottom: 30px;
+    margin-left: var(--space1x);
+    margin-bottom: var(--space3x);
 }
 
 .formulaire__nom__texte{
     font-family: Mulish;
     font-style: semi-bold;
-    font-size: 20px;
-    margin-bottom: 10px;
+    font-size: var(--space2x);
+    margin-bottom: var(--space1x);
     display: block;
-    color: var(--noir-texte);
-    
+    color: var(--blanc-texte);
+    margin-left: var(--space2x);
 }
 
 .contact{
-    background-color: var(--gris-clair);
+    background-color: var(--background-color);
 }
 
-input {
+input,
+textarea {
     text-decoration: none;
     background-color: white; 
-  
+    margin-left: var(--space2x);
   }
+
+
+.bouton__article--contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: var(--space5x);
+    margin-bottom: 100px;
+}
