@@ -19,3 +19,16 @@
     justify-content: center;
     align-items: center;
 }
+
+.image__ap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.image__ap--img{
+    max-width: 60%;
+    border-radius: 5px;
+    margin-top: 20px;
+}

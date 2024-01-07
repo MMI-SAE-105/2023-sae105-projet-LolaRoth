@@ -8,18 +8,57 @@
     <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
 </head>
 <body>
-    <h1>A propos</h1>
-    <p>Salut, moi c’est Lola Roth, une étudiante en première année de BUT MMI à l’université
+  <header class="header">
+    <div class="header__elt">
+    <a href="/index.html">
+    <img class="header__accueil" src="/public/icones/home.svg" alt="logo accueil">
+    </a>
+    <p class="header__titre">Senseception</p>
+    <button 
+    aria-controls="mainNav"
+    @click="menuIsOpen = ! menuIsOpen"
+    class="header_menuBtn">
+    <img class="header__logo" src="/public/icones/Menu.svg" alt="Menu hamburger">
+    </button>
+
+    <nav
+    id="mainNav"
+    x-show="menuIsOpen"
+    x-transition.duration.800ms
+    class="menu">
+
+    <ul class="categorie">
+        <li class="text_menu"><a href="/fr/replique.html">Réplique</a></li>
+        <li class="text_menu"><a href="/fr/realisation.html">Réalisation</a></li>
+        <li class="text_menu"><a href="/fr/inception.html">Inception</a></li>
+        <li class="text_menu"><a href="/fr/musique.html">Côté musical</a></li>
+        <li class="text_menu"><a href="/fr/glossaire.html">Glossaire</a></li>
+        <li class="text_menu"><a href="/fr/autres_projets.html">Autres projets</a></li>
+    </ul>
+
+    </nav>
+    </div>
+</header>
+    <h1 class="titre">A propos</h1>
+    <p class="texte__article">Salut, moi c’est Lola Roth, une étudiante en première année de BUT MMI à l’université
         de Montbéliard.</p>
-    <img src="" alt="Image d'autoportrait">
-    <p>Ce site a été réalisé dans un contexte de projet pour l’université avec pour sujet 
+    
+    <div class="image__ap">
+    <img class="image__ap--img" src="/public/icones/pp sasn fond 3.svg" alt="Image d'autoportrait">
+   </div>
+    <p class="texte__article">Ce site a été réalisé dans un contexte de projet pour l’université avec pour sujet 
         « Réplique de film ». 
         
-        Il a pour but de présenter une réplique de film et d’exploiter son univers en créant notre premier site web. 
-        
+    <p class="texte__article">Il a pour but de présenter une réplique de film et d’exploiter son univers en créant notre premier site web. 
+    </p>
+    <p class="texte__article">
         Il a donc pour thème le cinéma et plus précisément Inception (dans mon cas), mais aussi la musique et la littérature.</p>
-
-    <button>Contact</button>
+    </p>
+        <div class="bouton__article--contact">
+          <a href="/fr/contact.html">
+              <img src="/public/icones/contact.svg" alt="Bouton contact">
+          </a>
+      </div>
     
 </body>
 <footer class="footer">

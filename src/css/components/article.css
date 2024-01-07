@@ -48,16 +48,16 @@
 
 .ligne{
     height: 120%;
-    margin-top: 30px;
+    margin-top: var(--space3x);
    
 }
 
 .titre__ligne{
     display: flex;
     align-items: center;
-    margin-right: 10px;
-    gap: 20px;
-    margin-left: 10px;
+    margin-right: var(--space1x);
+    gap: var(--space2x);
+    margin-left: var(--space1x);
 }
 
 .article__suivant{
@@ -75,6 +75,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 10px;
+  margin-top: var(--space1x);
+}
+
+.bouton__article--contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: var(--space2x);
+    margin-bottom: var(--space2x);
 }
 
