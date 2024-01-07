@@ -9,6 +9,7 @@
 @import "utils/variables.css";
 @import "components/index.css";
 @import "components/article.css";
+@import "components/contact.css";
 
 @import "layout/header.css";
 

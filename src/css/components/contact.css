@@ -1,0 +1,46 @@
+.formulaire{
+    font-family: Mulish;
+    font-size: var(--title-s);
+    color: var(--noir-texte);
+    margin-top: 5vw;
+    margin-left: 5vw;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.formulaire__titre{
+    font-family: Rambla;
+    font-style: bold;
+    font-size: var(--title-xxl);
+    color: var(--noir-texte);
+    text-align: center;
+}
+
+.formulaire__nom{
+    font-family: Mulish;
+    font-size: var(--title-s);
+    color: var(--blanc-texte);
+    margin-left: 10px;
+    margin-bottom: 30px;
+}
+
+.formulaire__nom__texte{
+    font-family: Mulish;
+    font-style: semi-bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+    display: block;
+    color: var(--noir-texte);
+    
+}
+
+.contact{
+    background-color: var(--gris-clair);
+}
+
+input {
+    text-decoration: none;
+    background-color: white; 
+  
+  }

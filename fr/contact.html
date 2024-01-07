@@ -8,18 +8,64 @@
     <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
 </head>
 <body>
-    <h1>Contact</h1>
-    <h2>Si vous avez des questions ou des remarques :</h2>
+    <header class="header">
+        <div class="header__elt">
+        <a href="/index.html">
+        <img class="header__accueil" src="/public/icones/home.svg" alt="logo accueil">
+        </a>
+        <p class="header__titre">Senseception</p>
+        <button 
+        aria-controls="mainNav"
+        @click="menuIsOpen = ! menuIsOpen"
+        class="header_menuBtn">
+        <img class="header__logo" src="/public/icones/Menu.svg" alt="Menu hamburger">
+        </button>
+    
+        <nav
+        id="mainNav"
+        x-show="menuIsOpen"
+        x-transition.duration.800ms
+        class="menu">
+    
+        <ul class="categorie">
+            <li class="text_menu"><a href="/fr/replique.html">Réplique</a></li>
+            <li class="text_menu"><a href="/fr/realisation.html">Réalisation</a></li>
+            <li class="text_menu"><a href="/fr/inception.html">Inception</a></li>
+            <li class="text_menu"><a href="/fr/musique.html">Côté musical</a></li>
+            <li class="text_menu"><a href="/fr/glossaire.html">Glossaire</a></li>
+            <li class="text_menu"><a href="/fr/autres_projets.html">Autres projets</a></li>
+        </ul>
+    
+        </nav>
+        </div>
+    </header>
+    <main class="contact">
+    <h1 class="formulaire__titre">Contact</h1>
+    <h2 class="formulaire">Si vous avez des questions ou des remarques :</h2>
     <form action="#">
-        <label for="name">Nom :</label>
+        <div class="formulaire__nom">
+        <label class="formulaire__nom__texte" for="name">Nom :</label>
         <input type="text" id="name" name="name" placeholder="Votre nom">
-        <label for="mail">E-mail :</label>
+        </div>
+
+        <div class="formulaire__nom">
+        <label class="formulaire__nom__texte" for="mail">E-mail :</label>
         <input type="email" id="mail" name="mail" placeholder="Votre e-mail">
-        <label for="msg">Message :</label>
+        </div>
+
+        <div class="formulaire__nom">
+        <label class="formulaire__nom__texte" for="msg">Message :</label>
         <textarea id="msg" name="msg" placeholder="Votre message"></textarea>
-        <button type="submit">Envoyer</button>
+        </div>
+        <div class="bouton__article--contact">
+            <a href="/fr/contact.html">
+                <img src="/public/icones/Bouton_envoyer.svg" alt="Bouton envoyer">
+            </a>
+        </div>
     </form>
+
 </body>
+
 <footer class="footer">
     <div class="footer__elt">
     
@@ -58,4 +104,5 @@
     </a>
     </div>
   </footer>
+</main>
 </html>
