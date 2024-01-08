@@ -91,6 +91,7 @@
     align-items: center;
     text-align: center;
     height: 100%;
+    padding-top:50px;
 }
 .text_menu{
     font-family: Mulish;
@@ -103,4 +104,27 @@
     font-size: var(--title-xl);
     list-style-type: none;
     line-height: 50px;
+}
+
+.language-switcher{
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    text-align: center;
+    height: 4%;
+    margin-top: 50px;
+    border: 2px solid white; /* Ajoutez cette ligne */
+    padding: 10px;
+    border-radius: 8px;
+    
+}
+
+.language-switcher__link__fr{
+    color: var(--blanc-texte);
+    font-weight: bold;
+}
+
+.language-switcher__link__en{
+    color: var(--blanc-texte);
+    margin-left: 40px;
 }
