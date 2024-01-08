@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen}">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Glossaire</title>
+    <link rel="stylesheet" href="/src/css/style.css">
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="header__elt">
+        <a href="/fr/index.html">
+        <img class="header__accueil" src="/public/icones/home.svg" alt="logo accueil">
+        </a>
+        <p class="header__titre">Senseception</p>
+        <button 
+        aria-controls="mainNav"
+        @click="menuIsOpen = ! menuIsOpen"
+        class="header_menuBtn">
+        <img class="header__logo" src="/public/icones/Menu.svg" alt="Menu hamburger">
+        </button>
+
+        <nav
+        id="mainNav"
+        x-show="menuIsOpen"
+        x-transition.duration.800ms
+        class="menu">
+
+        <ul class="categorie">
+            <li class="text_menu"><a href="/fr/replique.html">Réplique Mémorable</a></li>
+            <li class="text_menu"><a href="/fr/realisation.html">Christopher Nolan</a></li>
+            <li class="text_menu"><a href="/fr/inception.html">Exploration de rêves</a></li>
+            <li class="text_menu"><a href="/fr/musique.html">Symphonie onirique</a></li>
+            <li class="text_menu"><a href="/fr/livre.html">Bilbiothèque</a></li>
+            <li class="text_menu"><a href="/fr/glossaire.html">Glossaire</a></li>
+            <li class="text_menu"><a href="/fr/autres_projets.html">Autres projets</a></li>
+        </ul>
+
+        </nav>
+        </div>
+    </header>
+    <h1 class="titre">Glossaire</h1>
+    <h2 class="sous__titre--gallerie">Présentation des personnages</h2>
+    <img class="losange__g" src="/public/icones/losange g.svg" alt="élément de décor">
+    <div class="image__glossaire">
+    <img class="article__image__glossaire" src="/public/img/glossaire1.webp" alt="Dom Cobb/ Leonardo DiCaprio">
+    <img class="losange__d" src="/public/icones/losange d.svg" alt="élément de décor">
+    <p class="texte__article">Dom Cobb, incarné par Léonardo Di Caprio, est le personnage central du film et un brillant extracteur de rêves. </p>
+    <p class="texte__article">Il possède une expertise inégalée dans l’art de pénétrer les rêves d’autrui pour voler des
+        informations. </p>
+    <p class="texte__article">Cependant, il est hanté par un passé tumultueux, notamment la perte de
+        sa femme Mal.</p>
+    </div>
+   
+    <img class="losange__g" src="/public/icones/losange g.svg" alt="élément de décor">
+    <img class="article__image__glossaire" src="/public/img/glossaire2.webp" alt="Mal Cobb">
+    
+    <p class="texte__article">Mal Cobb est un personnage complexe et central de l’intrigue d’Inception. 
+        Elle est l’épouse de Dom et une présence enchevêtrée dans ses rêves et ses regrets.</p>
+    <p class="texte__article">Mal est à la fois une muse et un fardeau pour Dom, son ombre hante les rêves de Dom et joue un rôle essentiel dans l’intrigue du film.</p>
+    <img class="losange__d" src="/public/icones/losange d.svg" alt="élément de décor">
+
+    <h2 class="sous__titre--gallerie">Autres termes</h2>
+    <img class="losange__g" src="/public/icones/losange g.svg" alt="élément de décor">
+    <img class="article__image__glossaire" src="/public/img/glossaire3.webp" alt="Les limbes">
+    <p class="texte__article">Limbes : L’univers le plus profond des rêves dans le film «Inception» où le temps s’écoule différemment.</p>
+    
+
+    
+    <img class="article__image__glossaire" src="/public/img/glossaire4.webp" alt="Totem">
+    
+    <p class="texte__article">Totem : C’est l’objet qui est utilisé par les personnages dans le film pour savoir s’ils se
+        situent dans un rêve ou dans la réalité. Le totem, dans le film, est une toupie.</p>
+
+    <p class="texte__article--modif">Cobol Engineering : L’entreprise fictive pour laquelle Dom Cobb et son équipe travaillent dans le film.</p>
+    
+
+    
+</body>
+<footer class="footer">
+    <div class="footer__elt">
+    
+    <a class="footer__lien" href="/fr/a_propos.html">
+    A propos
+    </a>
+
+    <p class="footer__texte--m">Lola Roth MMI B1</p>
+
+    <p class="footer__texte--p">
+      Projet réalisé dans le cadre d’un exercice pédagogique au département MMi
+      de Montbéliard
+    </p>
+
+    <a class="footer__lien" href="/fr/contact.html">
+    Contact
+    </a>
+    <hr>
+
+    <p class="footer__texte">
+      IUT de Belfort – Montbéliard Place Tharradin, 25200 Montbéliard.
+      lolaroth08@gmail.com
+    </p>
+    </div>
+    <div class="footer__logos">
+    <a href="https://www.instagram.com/mmi_montbeliard/?hl=en">
+        <img src="/public/icones/instagram.svg" alt="logo instagram">
+    </a>
+
+    <a href="https://mmimontbeliard.com/">
+        <img src="/public/icones/MMI_blanc.svg" alt="logo département MMI">
+    </a>
+
+    <a href="https://twitter.com/MMImontbeliard">
+        <img src="/public/icones/twitter.svg" alt="logo twitter">
+    </a>
+    </div>
+  </footer>
+</html>

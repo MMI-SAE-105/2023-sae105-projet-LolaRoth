@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen}">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Réalisation</title>
+    <link rel="stylesheet" href="/src/css/style.css">
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="header__elt">
+        <a href="/fr/index.html">
+        <img class="header__accueil" src="/public/icones/home.svg" alt="logo accueil">
+        </a>
+        <p class="header__titre">Senseception</p>
+        <button 
+        aria-controls="mainNav"
+        @click="menuIsOpen = ! menuIsOpen"
+        class="header_menuBtn">
+        <img class="header__logo" src="/public/icones/Menu.svg" alt="Menu hamburger">
+        </button>
+
+        <nav
+        id="mainNav"
+        x-show="menuIsOpen"
+        x-transition.duration.800ms
+        class="menu">
+
+        <ul class="categorie">
+            <li class="text_menu"><a href="/fr/replique.html">Réplique</a></li>
+            <li class="text_menu"><a href="/fr/realisation.html">Réalisation</a></li>
+            <li class="text_menu"><a href="/fr/inception.html">Inception</a></li>
+            <li class="text_menu"><a href="/fr/musique.html">Côté musical</a></li>
+            <li class="text_menu"><a href="/fr/glossaire.html">Glossaire</a></li>
+            <li class="text_menu"><a href="/fr/autres_projets.html">Autres projets</a></li>
+        </ul>
+
+        </nav>
+        </div>
+    </header>
+    <h2 class="auteur">Rédigé le 7/12/2023
+        <br>Par : Lola ROTH
+    </h2>
+    <h1 class="titre">Christopher Nolan</h1>
+        <p class="texte__article">C’est ici que vous pourrez découvrir la véritable histoire de l’homme ayant réalisé ce chef d’œuvre.</p>
+        <p class="texte__article">L’homme se cachant derrière cette caméra est nul autre que l’incontournable Christopher Nolan.</p>
+        <p class="texte__article">Découvrez toute son histoire dans cet article.</p>
+
+    <img class="losange__g" src="/public/icones/losange g.svg" alt="élément de décor">
+    <figure>
+    <img class="article__image" src="/public/img/Nolan_PA.webp" alt="Christopher Nolan, 2023">
+    <img class="losange__d" src="/public/icones/losange d.svg" alt="élément de décor">
+    <figcaption class="article__image__description">Christopher Nolan, 2013</figcaption>
+    </figure>
+
+    <h3 class="sous__titre">L’architecte de la réalité</h3>
+    
+        <p class="texte__article">Le prodige ayant réalisé ce film est bien connu : Christopher Nolan. </p>
+        <p class="texte__article">Né le 30 juillet 1970 Westminster, il a toujours été un grand passionné de l’univers cinématographique.</p>
+        <p class="texte__article">Il se fait très rapidement une place parmi les grands, notamment avec le film Memento en 2000, qui se fera nommer aux oscars.</p>
+
+    <h3 class="sous__titre--gallerie">Films à découvrir</h3>
+    <div class="gallery__image">
+    
+    <a class="gallery__image__lien" href="https://www.youtube.com/watch?v=2zVbrV1ehnU">
+    <img src="/public/img/le-prestige.webp" alt="affiche du film le prestige">   
+    <img src="/public/icones/Bouton_decouvrir.svg" alt="bouton découvrir">
+    </a>
+
+    <a class="gallery__image__lien" href="https://www.youtube.com/watch?v=UMgb3hQCb08">
+        <img src="/public/img/dark_night.webp" alt="affiche du film the dark night">
+        <img src="/public/icones/Bouton_decouvrir.svg" alt="bouton découvrir">
+    </a>
+
+    <a class="gallery__image__lien" href="https://www.youtube.com/watch?v=VaOijhK3CRU">
+    <img src="/public/img/interstellar-affiche.webp" alt="affiche du film Interstellar">
+    <img src="/public/icones/Bouton_decouvrir.svg" alt="bouton découvrir">
+</a>
+
+    <a class="gallery__image__lien" href="https://www.youtube.com/watch?v=chRUCIk3K94&t=4s">
+    <img src="/public/img/dunkerque.webp" alt="afiiche du film dunkerque">
+    <img src="/public/icones/Bouton_decouvrir.svg" alt="bouton découvrir">
+</a>
+
+    <a class="gallery__image__lien" href="https://www.youtube.com/watch?v=6UG5LJQNjts&t=1s">
+    <img src="/public/img/tenet.webp" alt="affiche du film tenet">
+    <img src="/public/icones/Bouton_decouvrir.svg" alt="bouton découvrir">
+</a>
+
+    
+
+    <a class="gallery__image__lien" href="https://www.youtube.com/watch?v=CoXtvSRpHgM&t=4s">
+    <img src="/public/img/oppenheimer.webp" alt="affiche du film oppenheimer">
+    <img src="/public/icones/Bouton_decouvrir.svg" alt="bouton découvrir">
+</a>
+
+    </div>
+
+    <h3 class="sous__titre">L’explorateur des limites narratives</h3>
+    
+        <p class="texte__article">Inception est un exemple éloquent de la capacité de Nolan à explorer des limites narratives. </p>
+        <p class="texte__article">Le film plonge profondément dans le concept de l’inconscient et des rêves,
+            remettant en question la réalité et la perception. 
+            Il est un maître dans l’art de manipuler
+            la structure narrative pour créer un monde cinématographique unique et fascinant.</p>
+
+    <h3 class="sous__titre">L’émotion au cœur de ses oeuvres</h3>
+    
+        <p class="texte__article">Ce qui rend les films de Nolan si puissants, c’est leur capacité à évoquer des émotions
+            profondes. 
+            Dans «Inception», l’amour, la culpabilité et la quête de la rédemption sont
+            des thèmes centraux, et ce sont aussi des situations où le spectateur peut se reconnaitre. </p>  
+        <p class="texte__article">Ces éléments émotionnels ajoutent une dimension supplémentaire à l’intrigue
+            complexe qui fait de ce réalisateur un véritable prodige.</p>
+    
+    <h3 class="sous__titre">Un impact durable</h3>
+    
+        <p class="texte__article">Christopher Nolan a laissé une empreinte indélébile sur l’industrie cinématographique.</p>
+        <p class="texte__article">Sa manière de combiner l’intellectuel avec l’émotionnel et sa capacité à créer des films visuellement époustouflants en ont fait l’un des réalisateurs les plus respectés de notre époque. </p>
+        <p class="texte__article">Son talent se fait ressentir non seulement dans la sa technique mais aussi la réalisation de ses films qui captive aussi bien les adeptes que les néophytes.</p>
+
+    <img class="losange__g" src="/public/icones/losange g.svg" alt="élément de décor">
+    <figure>
+    <img class="article__image" src="/public/img/article2-img2.webp" alt="Dom Cobb dans les limbes">
+    <img class="losange__d" src="/public/icones/losange d.svg" alt="élément de décor">
+    <figcaption class="article__image__description">Dom Cobb dans les limbes</figcaption>
+    </figure>
+
+    <p class="texte__article">Pour les plus grands fans d’Inception, vous savez que nous devons notre profonde
+        appréciation du film à Christopher Nolan, le magicien visionnaire qui a créé cette expérience cinématographique inoubliable. </p>
+    <p class="texte__article">Son travail continue d’inspirer les cinéphiles
+        et de repousser les limites du cinéma, et il l’a encore bien prouvé récemment avec son
+        film « Oppenheimer ».</p>
+    
+    
+    
+        <a class="article__suivant" href="/fr/inception.html">
+        <img src="/public/icones/Article_suivant.svg" alt="bouton article suivant">
+        </a>
+
+</body>
+<footer class="footer">
+    <div class="footer__elt">
+    
+    <a class="footer__lien" href="/fr/a_propos.html">
+    A propos
+    </a>
+
+    <p class="footer__texte--m">Lola Roth MMI B1</p>
+
+    <p class="footer__texte--p">
+      Projet réalisé dans le cadre d’un exercice pédagogique au département MMi
+      de Montbéliard
+    </p>
+
+    <a class="footer__lien" href="/fr/contact.html">
+    Contact
+    </a>
+    <hr>
+
+    <p class="footer__texte">
+      IUT de Belfort – Montbéliard Place Tharradin, 25200 Montbéliard.
+      lolaroth08@gmail.com
+    </p>
+    </div>
+    <div class="footer__logos">
+    <a href="https://www.instagram.com/mmi_montbeliard/?hl=en">
+        <img src="/public/icones/instagram.svg" alt="logo instagram">
+    </a>
+
+    <a href="https://mmimontbeliard.com/">
+        <img src="/public/icones/MMI_blanc.svg" alt="logo département MMI">
+    </a>
+
+    <a href="https://twitter.com/MMImontbeliard">
+        <img src="/public/icones/twitter.svg" alt="logo twitter">
+    </a>
+    </div>
+  </footer>
+</html>

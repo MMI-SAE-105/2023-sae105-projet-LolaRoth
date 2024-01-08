@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen}">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hans Zimmer</title>
+    <link rel="stylesheet" href="/src/css/style.css">
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="header__elt">
+        <a href="/fr/index.html">
+        <img class="header__accueil" src="/public/icones/home.svg" alt="logo accueil">
+        </a>
+        <p class="header__titre">Senseception</p>
+        <button 
+        aria-controls="mainNav"
+        @click="menuIsOpen = ! menuIsOpen"
+        class="header_menuBtn">
+        <img class="header__logo" src="/public/icones/Menu.svg" alt="Menu hamburger">
+        </button>
+
+        <nav
+        id="mainNav"
+        x-show="menuIsOpen"
+        x-transition.duration.800ms
+        class="menu">
+
+        <ul class="categorie">
+            <li class="text_menu"><a href="/fr/replique.html">Réplique Mémorable</a></li>
+            <li class="text_menu"><a href="/fr/realisation.html">Christopher Nolan</a></li>
+            <li class="text_menu"><a href="/fr/inception.html">Exploration de rêves</a></li>
+            <li class="text_menu"><a href="/fr/musique.html">Symphonie onirique</a></li>
+            <li class="text_menu"><a href="/fr/livre.html">Bilbiothèque</a></li>
+            <li class="text_menu"><a href="/fr/glossaire.html">Glossaire</a></li>
+            <li class="text_menu"><a href="/fr/autres_projets.html">Autres projets</a></li>
+        </ul>
+
+        </nav>
+        </div>
+    </header>
+    <h2 class="auteur">Rédigé le 7/12/2023
+        <br>Par : Lola ROTH
+    </h2>
+    <h1 class="titre">Symphonie onirique</h1>
+        <p class="texte__article">Beaucoup le savent déjà mais la musique fait partie intégrante dans Inception.</p>
+        <p class="texte__article">Tout cela à été possible grâce à l’incontournable Hans Zimmer.</p>
+        <p class="texte__article">C’est dans cet article que vous découvrirez la véritable histoire du duo Nolan et Zimmer.</p>
+    
+    <h3 class="sous__titre">La signature musicale d’Inception</h3>
+        <p class="texte__article">En écoutant les premières notes de Times, certains sont directement transportés dans
+        l’univers onirique d’Inception, d’autre remarque la patte artistique du talentueux Hans
+        Zimmer. </p>
+        <p class="texte__article">Tout au long de l’histoire, la musique joue un rôle particulier notamment en
+            faisant ressentir au spectateur les émotions des personnages à travers la musique.</p>
+    
+    <h3 class="sous__titre">La collaboration visionnaire</h3>
+        <p class="texte__article">La relation entre Christopher Nolan, le réalisateur du film, et Hans Zimmer, le compositeur, est emblématique, d’un côté par la manière dont la musique se fond parfaitement
+            au film mais aussi son pouvoir à faire ressentir de nouvelles émotions. </p>
+        <p class="texte__article">
+            Zimmer et Nolan
+            ont travaillé en étroite collaboration pour créer une bande-son qui s’intègre parfaitement à l’intrigue et qui renforce les émotions des personnages.</p>
+    
+    <img class="losange__g" src="/public/icones/losange g.svg" alt="élément de décor">
+    <figure>
+    <img class="article__image" src="/public/img/collab_PA.webp" alt="Christopher Nolan et Hans Zimmer">
+    <img class="losange__d" src="/public/icones/losange d.svg" alt="élément de décor">
+    <figcaption class="article__image__description">Christopher Nolan et Hans Zimmer</figcaption>
+    </figure>
+
+    <h3 class="sous__titre">La puissance de l’émotion</h3>
+        <p class="texte__article">«Time» est une composition musicale d’une grande puissance émotionnelle.</p>
+        <p class="texte__article">Les passionnés d’Inception savent que la musique accompagne les moments clés du film,
+            notamment à la fin du film lorsque les personnages se trouvent dans des Limbes. </p>
+        <p class="texte__article">La musique a alors le pouvoir d’intensifier la scène malgré la tension déjà présente.</p>
+    
+    <h3 class="sous__titre">Le thème du temps</h3>
+        <p class="texte__article">La musique est particulièrement bien adaptée au thème du temps qui est au cœur du film. </p>
+        <p class="texte__article">Les horloges, les battements de cœur, et les mélodies captivantes rappellent constamment le rôle du temps dans l’intrigue. 
+            Cela renforce l’idée que le temps est une ressource précieuse qui doit être gérée avec soin dans le monde des rêves d’Inception.</p>
+    
+    <h3 class="sous__titre">L’héritage du temps</h3>
+        <p class="texte__article">Depuis la sortie du film en 2010, la musique Time a connu un succès durable. Elle est
+            devenue un morceau emblématique qui transcende le film et évoque des émotions
+            puissantes chez les auditeurs, même en dehors du contexte d’Inception. </p>
+        <p class="texte__article">La composition de Hans Zimmer est saluée comme l’une des meilleures œuvres musicales de
+            l’histoire du cinéma.</p>
+
+        <p class="texte__article">En somme, Hans Zimmer est bien plus qu’un compositeur de musique de film. </p>
+        <p class="texte__article">Il est un conteur d’histoires sonores qui nous transporte dans des mondes imaginaires, et
+            «Inception» est l’une de ses œuvres maîtresses qui continue de captiver et d’émouvoir
+            les auditeurs du monde entier. 
+        </p>
+        <p class="texte__article">De plus Christopher Nolan a déjà réalisé plusieurs collaborations avec Zimmer, comme avec le film Interstellar qui a su marquer les esprits de
+            nombreux spectateurs.</p>
+
+    <img class="losange__g" src="/public/icones/losange g.svg" alt="élément de décor">
+    <figure>
+    <img class="article__image" src="/public/img/article4-img2.webp" alt="Film Interstellar, 2014">
+    <img class="losange__d" src="/public/icones/losange d.svg" alt="élément de décor">
+    <figcaption class="article__image__description">Film Interstellar, 2014</figcaption>
+    </figure>
+
+    <div  class="bouton__article">
+        <a href="https://www.youtube.com/watch?v=VaOijhK3CRU">
+            <img src="/public/icones/Bouton_decouvrir.svg" alt="Bouton découvrir">
+        </a>
+    </div>
+    
+
+    <p class="texte__article">Ce n’est donc plus un secret que la musique joue un rôle très important dans le film,
+        notamment pour Inception. 
+        Time fait partie intégrante du film en transportant des émotions particulières aux spectateurs, qui les plongent totalement dans l’ambiance d’Inception.</p>
+    <p class="texte__article">Cette magie est possible grâce au talentueux Hans Zimmer mais Christopher Nolan qui ont su collaborer d’une très belle manière.</p>
+
+    <a class="article__suivant" href="/fr/livre.html">
+        <img src="/public/icones/Article_suivant.svg" alt="bouton article suivant">
+        </a>
+
+
+</body>
+<footer class="footer">
+    <div class="footer__elt">
+    
+    <a class="footer__lien" href="/fr/a_propos.html">
+    A propos
+    </a>
+
+    <p class="footer__texte--m">Lola Roth MMI B1</p>
+
+    <p class="footer__texte--p">
+      Projet réalisé dans le cadre d’un exercice pédagogique au département MMi
+      de Montbéliard
+    </p>
+
+    <a class="footer__lien" href="/fr/contact.html">
+    Contact
+    </a>
+    <hr>
+
+    <p class="footer__texte">
+      IUT de Belfort – Montbéliard Place Tharradin, 25200 Montbéliard.
+      lolaroth08@gmail.com
+    </p>
+    </div>
+    <div class="footer__logos">
+    <a href="https://www.instagram.com/mmi_montbeliard/?hl=en">
+        <img src="/public/icones/instagram.svg" alt="logo instagram">
+    </a>
+
+    <a href="https://mmimontbeliard.com/">
+        <img src="/public/icones/MMI_blanc.svg" alt="logo département MMI">
+    </a>
+
+    <a href="https://twitter.com/MMImontbeliard">
+        <img src="/public/icones/twitter.svg" alt="logo twitter">
+    </a>
+    </div>
+  </footer>
+</html>

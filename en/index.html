@@ -1,11 +1,159 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    dfbfd
-</body>
+<html lang="fr" x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen}">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page d'accueil</title>
+    <link rel="stylesheet" href="/src/css/style.css">
+    <link rel="alternate" hreflang="fr" href="/fr/index.html">
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+  </head>
+  <body>
+    <header class="header">
+        <div class="header__elt">
+        <a href="/fr/index.html">
+        <img class="header__accueil" src="/public/icones/home.svg" alt="logo accueil">
+        </a>
+        <p class="header__titre">Senseception</p>
+        <button 
+        aria-controls="mainNav"
+        @click="menuIsOpen = ! menuIsOpen"
+        class="header_menuBtn">
+        <img class="header__logo" src="/public/icones/Menu.svg" alt="Menu hamburger">
+        </button>
+
+        <nav
+        id="mainNav"
+        x-show="menuIsOpen"
+        x-transition.duration.800ms
+        class="menu">
+
+        <ul class="categorie">
+          <li class="text_menu"><a href="/fr/replique.html">Memorable reply</a></li>
+          <li class="text_menu"><a href="/fr/realisation.html">Christopher Nolan</a></li>
+          <li class="text_menu"><a href="/fr/inception.html">Dream exploration</a></li>
+          <li class="text_menu"><a href="/fr/musique.html">Dream symphony</a></li>
+          <li class="text_menu"><a href="/fr/livre.html">Library</a></li>
+          <li class="text_menu"><a href="/fr/glossaire.html">Glossary</a></li>
+          <li class="text_menu"><a href="/fr/autres_projets.html">Other projects</a></li>
+        </ul>
+
+        </nav>
+        </div>
+    </header>
+
+    <img class="losange" src="/public/icones/Losange 4.svg" alt="élément de décor">
+    <div class="citation">
+      <h1 class="citation__titre">Positive emotions are stronger than negative ones</h1>
+      <p class="citation__sous--titre">Dom Cobb</p>
+    </div>
+
+    <img class="losange2" src="/public/icones/Losange 4.svg" alt="élément de décor">
+    <div class="intro">
+      <h2 class="intro__texte">
+        Immerse yourself in a world where the unconscious becomes a playground
+        complex and where every detail counts.
+      </h2>
+    </div>
+
+    <img class="losange3" src="/public/icones/Losange 4.svg" alt="élément de décor">
+    <div class="article">
+      <p class="article__texte--dif">
+        Through the complex and fascinating universe of Inception, discover how
+        This line about emotions made a difference.
+      </p>
+      <a href="/fr/replique.html">
+      <img class="article__bouton--dif" src="/public/icones/Bouton_lire-plus.svg" alt="Bouton lire plus">
+        </a>
+    </div>
+
+    <div class="article">
+      <img class="article__img" src="/public/img/Nolan_PA.webp" alt="Photo de Christopher Nolan">
+      <p class="article__texte">
+        In this article, let’s dive into the universe of Christopher Nolan, a
+        director who redefined the rules of the game.
+      </p>
+      <a class="article__bouton" href="/fr/realisation.html">
+      <img  src="/public/icones/Bouton_lire-plus.svg" alt="Bouton lire plus">
+      </a>
+    </div>
+
+    <div class="article">
+      <img class="article__img" src="/public/img/Limbes_PA.webp" alt="Images du film dans les limbes">
+      <p class="article__texte">
+        In this article, we will explore in depth this cult film, which
+        has captivated and intrigued lovers of complex history and beyond
+        common.
+      </p>
+      <a class="article__bouton" href="/fr/inception.html">
+      <img  src="/public/icones/Bouton_lire-plus.svg" alt="Bouton lire plus">
+      </a>
+    </div>
+
+    <div class="article">
+      <img class="article__img" src="/public/img/collab_PA.webp" alt="Photo de Christopher Nolan et Hans Zimmer">
+      <p class="article__texte">
+        In this article, we will explore how “Time” by Hans Zimmer,
+        we fully immersed ourselves in the world of film.
+      </p>
+      <a class="article__bouton" href="/fr/musique.html">
+      <img  src="/public/icones/Bouton_lire-plus.svg" alt="Bouton lire plus">
+      </a>
+    </div>
+
+    <div class="article">
+      <img class="article__img" src="/public/img/philip_PA.webp" alt="Photo de philip k dick">
+      <p class="article__texte">
+        In this article we will explore how the book «Ubik» served
+        inspired by Christopher Nolan to create this masterpiece
+        complex film
+      </p>
+      <a class="article__bouton" href="/fr/livre.html">
+      <img  src="/public/icones/Bouton_lire-plus.svg" alt="Bouton lire plus">
+      
+    </div>
+</a>
+    </div>
+
+    
+  </body>
+  <footer class="footer">
+    <div class="footer__elt">
+    
+    <a class="footer__lien" href="/fr/a_propos.html">
+    About
+    </a>
+
+    <p class="footer__texte--m">Lola Roth MMI B1</p>
+
+    <p class="footer__texte--p">
+      Project carried out as part of a pedagogical exercise in the MMi department
+      montbéliard
+    </p>
+
+    <a class="footer__lien" href="/fr/contact.html">
+    Contact
+    </a>
+    <hr>
+
+    <p class="footer__texte">
+      IUT de Belfort – Montbéliard Place Tharradin, 25200 Montbéliard.
+      lolaroth08@gmail.com
+    </p>
+    </div>
+    <div class="footer__logos">
+    <a href="https://www.instagram.com/mmi_montbeliard/?hl=en">
+        <img src="/public/icones/instagram.svg" alt="logo instagram">
+    </a>
+
+    <a href="https://mmimontbeliard.com/">
+        <img src="/public/icones/MMI_blanc.svg" alt="logo département MMI">
+    </a>
+
+    <a href="https://twitter.com/MMImontbeliard">
+        <img src="/public/icones/twitter.svg" alt="logo twitter">
+    </a>
+    </div>
+  </footer>
+  
 </html>

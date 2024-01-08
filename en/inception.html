@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen}">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inception</title>
+    <link rel="stylesheet" href="/src/css/style.css">
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="header__elt">
+        <a href="/fr/index.html">
+        <img class="header__accueil" src="/public/icones/home.svg" alt="logo accueil">
+        </a>
+        <p class="header__titre">Senseception</p>
+        <button 
+        aria-controls="mainNav"
+        @click="menuIsOpen = ! menuIsOpen"
+        class="header_menuBtn">
+        <img class="header__logo" src="/public/icones/Menu.svg" alt="Menu hamburger">
+        </button>
+
+        <nav
+        id="mainNav"
+        x-show="menuIsOpen"
+        x-transition.duration.800ms
+        class="menu">
+
+        <ul class="categorie">
+            <li class="text_menu"><a href="/fr/replique.html">Réplique Mémorable</a></li>
+            <li class="text_menu"><a href="/fr/realisation.html">Christopher Nolan</a></li>
+            <li class="text_menu"><a href="/fr/inception.html">Exploration de rêves</a></li>
+            <li class="text_menu"><a href="/fr/musique.html">Symphonie onirique</a></li>
+            <li class="text_menu"><a href="/fr/livre.html">Bilbiothèque</a></li>
+            <li class="text_menu"><a href="/fr/glossaire.html">Glossaire</a></li>
+            <li class="text_menu"><a href="/fr/autres_projets.html">Autres projets</a></li>
+        </ul>
+
+        </nav>
+        </div>
+    </header>
+    <h2 class="auteur">Rédigé le 7/12/2023
+        <br>Par : Lola ROTH
+    </h2>
+    <h1 class="titre">Exploration des rêves</h1>
+        <p class="texte__article">Inception, ce film ayant reçu quatres oscars, et étant devenu un des films les plus emblématiques de l’histoire du cinéma.</p>
+        <p class="texte__article">Dans cet article, nous allons explorer en profondeur ce film culte, qui a su captiver et intriguer les amoureux d’histoire complexe et hors du commun.</p>
+
+    <h3 class="sous__titre">L’univers onirique d’Inception</h3>
+        <p class="texte__article">«Inception» est une odyssée cinématographique qui nous emmène dans un monde où
+            les limites de la réalité sont repoussées. 
+            L’histoire suit Dom Cobb, un voleur de rêves,
+            qui explore les esprits des autres pour voler leurs idées. 
+        </p>
+        <p class="texte__article">La complexité de l’intrigue, avec ses rêves en couches multiples, a séduit les passionnés du film dès la première minute.</p>
+    
+    <h3 class="sous__titre">Les acteurs, maîtres de l’écran</h3>
+        <p class="texte__article">Le film bénéficie également d’un casting exceptionnel, avec Leonardo DiCaprio dans le
+            rôle de Cobb, Joseph Gordon-Levitt en tant qu’Arthur, et Ellen Page en tant qu’Ariadne,
+            pour n’en citer que quelques-uns. </p>
+        <p class="texte__article">Chaque personnage apporte une nuance unique à
+            l’histoire, créant une dynamique captivante entre les rêveurs et les architectes de ce
+            monde onirique.</p>
+    <img class="losange__g" src="/public/icones/losange g.svg" alt="élément de décor">
+    <figure>
+    <img class="article__image" src="/public/img/article3-img1.webp" alt="Acteurs lors de la sortie du film">
+    <img class="losange__d" src="/public/icones/losange d.svg" alt="élément de décor">
+    <figcaption class="article__image__description">Acteurs lors de la sortie du film</figcaption>
+    </figure>
+
+    <div class="bouton__article">
+    <a class="Bouton_BA" href="">
+    <img  src="/public/icones/Bouton_BA.svg" alt="Bouton voir la bande annonce">
+    </a>
+    </div>
+
+    <h3 class="sous__titre">Les profondeurs de l’inconscient</h3>
+        <p class="texte__article">Inception ne se contente pas d’offrir des scènes d’action palpitantes, il explore également des thèmes profonds comme la réalité, la culpabilité, le deuil et la rédemption.
+        </p>
+        <p class="texte__article">Tous ces thèmes réunis dans les deux mondes entre rêve et réalité renforce cette idée
+            de profondeur. </p>
+        <p class="texte__article">C’est sûrement pour cela que l’intrigue parait aussi complexe et qu’elle
+            crée des débats entre passionnés. 
+            La fin du film a notamment laissé un doute palpable
+            au sein de la communauté.</p>
+    
+    <h3 class="sous__titre">Les effets spéciaux époustoufflants</h3>
+        <p class="texte__article">Le film est également salué pour ses effets spéciaux impressionnants, notamment les scènes de gravité zéro et les décors de rêve spectaculaires. </p>
+        <p class="texte__article">Dès le premier visionnage du film, les spectateurs ont souvent été fascinés par la manière dont ces éléments visuels sont utilisés pour créer un monde où la frontière entre la réalité et le rêve devient floue. </p>
+        <p class="texte__article">Le doute s’installe d’ailleurs quelque fois durant le film pour savoir s’il s’agit de la réalité ou d’un rêve, c’est d’ailleurs pour cela que certains personnages possèdent un totem.</p>
+    
+    <img class="losange__g" src="/public/icones/losange g.svg" alt="élément de décor">
+    <figure>
+    <img class="article__image" src="/public/img/Limbes_PA.webp" alt="Leonardo Di Caprio ">
+    <img class="losange__d" src="/public/icones/losange d.svg" alt="élément de décor">
+    <figcaption class="article__image__description">Leonardo DiCaprio</figcaption>
+    </figure>
+
+    <p class="texte__article">"Inception" est bien plus qu'un simple film pour les passionnés qui le chérissent. 
+        C'est un voyage hypnotique qui transcende les limites de la réalité et de l'imagination. </p>
+    <p class="texte__article">L'œuvre complexe et captivante de Christopher Nolan a su conquérir nos cœurs et continue de nous intriguer, nous laissant rêver et spéculer sur les profondeurs insoupçonnées de l'esprit humain.</p>
+    <p class="texte__article">Ce film est une véritable pépite pour les passionnés d'intrigues cinématographiques énigmatiques et de mondes oniriques.</p>
+
+    <a class="article__suivant" href="/fr/musique.html">
+    <img src="/public/icones/Article_suivant.svg" alt="bouton article suivant">
+    </a>
+
+</body>
+<footer class="footer">
+    <div class="footer__elt">
+    
+    <a class="footer__lien" href="/fr/a_propos.html">
+    A propos
+    </a>
+
+    <p class="footer__texte--m">Lola Roth MMI B1</p>
+
+    <p class="footer__texte--p">
+      Projet réalisé dans le cadre d’un exercice pédagogique au département MMi
+      de Montbéliard
+    </p>
+
+    <a class="footer__lien" href="/fr/contact.html">
+    Contact
+    </a>
+    <hr>
+
+    <p class="footer__texte">
+      IUT de Belfort – Montbéliard Place Tharradin, 25200 Montbéliard.
+      lolaroth08@gmail.com
+    </p>
+    </div>
+    <div class="footer__logos">
+    <a href="https://www.instagram.com/mmi_montbeliard/?hl=en">
+        <img src="/public/icones/instagram.svg" alt="logo instagram">
+    </a>
+
+    <a href="https://mmimontbeliard.com/">
+        <img src="/public/icones/MMI_blanc.svg" alt="logo département MMI">
+    </a>
+
+    <a href="https://twitter.com/MMImontbeliard">
+        <img src="/public/icones/twitter.svg" alt="logo twitter">
+    </a>
+    </div>
+  </footer>
+</html>
