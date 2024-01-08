@@ -100,3 +100,17 @@
     margin-right: 5vw;
     margin-bottom: var(--space5x);
 }
+
+
+.losange__g{
+    width: 30px;
+    margin-top: 20px;
+}
+
+.losange__d{
+    width: 30px;
+    
+    right: 0;
+    float: right;
+    margin-left: 10px;
+}
