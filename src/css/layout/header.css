@@ -5,6 +5,7 @@
     transition: height 0.5s ease;
     display: flex;
     flex-direction: column;
+    
 }
 
 .header__elt{
@@ -63,3 +64,13 @@
     line-height: 50px;
 }
 
+.menu{
+   
+  bottom: 20px; /* Ajouté */
+  width: 100%; /* Ajouté */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  
+}
