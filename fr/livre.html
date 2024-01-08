@@ -113,7 +113,46 @@
         <a class="article__suivant" href="/fr/autres_projets.html">
             <img src="/public/icones/Voir_plus.svg" alt="bouton voir plus">
             </a>
+    <h3 class="sous__titre">Découvrir des oeuvres similaires</h3>
 
+    <section class="biblio">
+        <div class="carrousel" x-data="{hrefCourant: '#ecran-1',}">
+            <button
+              @click="p=$refs.parent;p.scrollLeft-=p.clientWidth"
+              class="carrousel_btn carrousel_btn-avant"
+              aria-label="slide précedant"
+            >
+              &lt;
+            </button>
+            <button
+              @click="p=$refs.parent;p.scrollLeft+=p.clientWidth"
+              class="carrousel_btn carrousel_btn-apres"
+              aria-label="slide suivant"
+            >
+              >
+            </button>
+            <div class="carrousel_parent-ecrans" x-ref="parent"
+              @scroll.debounce.250ms.passive="
+              hrefCourant = '#'+
+                        [...$refs.parent.children]
+                         .find(e=>e.getBoundingClientRect().x>=0)
+                         .id">
+
+    <div id="ecran-1" class="carrousel_ecran">
+        <img class="carroussel__image" src="/public/img/livre-1.webp" alt="L’échiquier du mal, par Dan Simmons, 1989">
+        <p class="description">L’échiquier du mal, par Dan Simmons, 1989</p>
+        </div>
+
+    <div id="ecran-1" class="carrousel_ecran">
+        <img class="carroussel__image" src="/public/img/livre-2.webp" alt="La guerre des mondes, par H.G Wells, 1898">
+        <p class="description">La guerre des mondes, par H.G Wells, 1898</p>
+        </div>
+
+    <div id="ecran-1" class="carrousel_ecran">
+        <img class="carroussel__image" src="/public/img/le_jour_des_triffides.webp" alt="Le Jour des Triffides, 1951">
+        <p class="description">Le Jour des Triffides, 1951</p>
+        </div>
+    </section>
 </body>
 <footer class="footer">
     <div class="footer__elt">
