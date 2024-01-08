@@ -79,5 +79,13 @@
   margin-top: var(--space1x);
 }
 
-
+.sous__titre--gallerie{
+    font-family: Mulish;
+    font-size: var(--title-l);
+    color: var(--blanc-texte);
+    margin-top: 10vw;
+    margin-left: 5vw;
+    text-align: center;
+    justify-content: center;
+}
 
