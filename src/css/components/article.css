@@ -29,6 +29,8 @@
 }
 
 
+
+
 .article__image__description{
     font-family: Mulish;
     font-size: var(--text-xs);
@@ -89,3 +91,12 @@
     justify-content: center;
 }
 
+.texte__article--modif{
+    font-family: Mulish;
+    font-size: var(--titre-s);
+    color: var(--blanc-texte);
+    margin-top: 5vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-bottom: var(--space5x);
+}

@@ -8,6 +8,21 @@
     margin: 5vw;
 }
 
+.article__image__glossaire{
+    max-width: 60%;
+    border-radius: 5px;
+    margin: 5vw;
+    align-items: center;
+    justify-content: center;
+}
+
+.article__image__glossaire{
+    display: block;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
 .article__image__livre{
     max-width: 40%;
     border-radius: 5px;
