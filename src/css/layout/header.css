@@ -128,3 +128,13 @@
     color: var(--blanc-texte);
     margin-left: 40px;
 }
+
+.language-switcher__link{
+    color: var(--blanc-texte);
+}
+
+.language-switcher__link__en--en{
+    color: var(--blanc-texte);
+    font-weight: bold;
+    margin-left: 40px;
+}
