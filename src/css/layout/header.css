@@ -119,12 +119,12 @@
     border: 2px solid white; /* Ajoutez cette ligne */
     padding: 10px;
     border-radius: 8px;
-    
+    list-style-type: none;
 }
 
 .language-switcher__link__fr{
     color: var(--blanc-texte);
-    font-weight: bold;
+    font-weight: bolder;
 }
 
 .language-switcher__link__en{
