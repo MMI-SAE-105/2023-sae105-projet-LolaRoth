@@ -17,6 +17,20 @@ body{
     transform: translate(-50%, -50%);
 }
 
+.citation__titre__en{
+    font-family: Rambla;
+    font-size: 30px;
+    color: var(--blanc-texte);
+    text-align: center;
+    width: 400px;
+    height: 200px;
+    position: absolute;
+    padding-left: var(--space5x);
+    top: 22%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+}
+
 .citation__img{
     position: relative;
 }
@@ -32,10 +46,23 @@ body{
     font-style: italic;
     font-size: var(--texte-s);
     padding-top: 10px;
-    
     position: absolute;
     padding-left: var(--space5x);
     top: 24%;
+    left: 77%;
+    transform: translate(-50%, -50%);
+}
+
+.citation__sous--titre--en{
+    font-family: Mulish;
+    font-style: light;
+    color: var(--blanc-texte);
+    font-style: italic;
+    font-size: var(--texte-s);
+    padding-top: 10px;
+    position: absolute;
+    padding-left: var(--space5x);
+    top: 22%;
     left: 77%;
     transform: translate(-50%, -50%);
 }
