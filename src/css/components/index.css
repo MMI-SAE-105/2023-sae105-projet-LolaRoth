@@ -5,13 +5,24 @@ body{
 
 .citation__titre{
     font-family: Rambla;
-    font-size: var(--texte-xxl);
+    font-size: 30px;
     color: var(--blanc-texte);
     text-align: center;
-    width: 277px;
-    height: var(--space5x);
-    margin-top: 15px;
+    width: 400px;
+    height: 200px;
+    position: absolute;
     padding-left: var(--space5x);
+    top: 23%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+}
+
+.citation__img{
+    position: relative;
+}
+
+.citation{
+    background: var(--citation-color);
 }
 
 .citation__sous--titre{
@@ -20,18 +31,24 @@ body{
     color: var(--blanc-texte);
     font-style: italic;
     font-size: var(--texte-s);
-    padding-left: 300px;
+    padding-top: 10px;
+    
+    position: absolute;
+    padding-left: var(--space5x);
+    top: 24%;
+    left: 77%;
+    transform: translate(-50%, -50%);
 }
 
 .intro__texte{
     color: var(--blanc-texte);
     font-family: Mulish;
-    font-size: var(--texte-xs);
+    font-size: 20px;
     text-align: center;
-    height: 100px;
-    width: 300px;
-    padding-left: 80px;
-    margin-top: var(--space2x);
+    height: 80px;
+    width: 400px;
+    margin-left: 75px;
+    margin-top: 35px;
 }
 
 .losange{

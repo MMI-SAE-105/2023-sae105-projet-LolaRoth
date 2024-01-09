@@ -8,6 +8,15 @@
     
 }
 
+.header__home{
+    background: var(--noir-texte);
+    box-sizing: border-box;
+    max-width: 100%;
+    transition: height 0.5s ease;
+    display: flex;
+    flex-direction: column;
+}
+
 .header__elt{
     display: flex;
     justify-content: space-between;
