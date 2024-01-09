@@ -12,7 +12,7 @@ body{
     height: 200px;
     position: absolute;
     padding-left: var(--space5x);
-    top: 23%;
+    top: 22%;
     left: 45%;
     transform: translate(-50%, -50%);
 }
@@ -48,7 +48,7 @@ body{
     padding-top: 10px;
     position: absolute;
     padding-left: var(--space5x);
-    top: 24%;
+    top: 22%;
     left: 77%;
     transform: translate(-50%, -50%);
 }
