@@ -66,6 +66,8 @@ body{
 }
 
 
+
+
 .article__texte{
     color: var(--noir-texte);
     font-family: Mulish;
@@ -103,15 +105,17 @@ body{
     justify-content: center;
     flex-wrap: wrap;
     margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 .card{
-    width: 325px;
+    width: 350px;
+    width: 80%;
     background-color: var(--gris-clair);
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
-    margin: 20px;
+    margin: 30px;
 }
 
 .card img{
@@ -146,4 +150,12 @@ body{
     border-radius: 4px;
     margin-top: 16px;
     color: var(--blanc-texte);
+}
+
+.top__acueil{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    align-items: column;
+   
 }
