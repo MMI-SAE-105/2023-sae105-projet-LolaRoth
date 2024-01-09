@@ -1,14 +1,103 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"  x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen}">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>404 Page Not Found</title>
+    <link rel="stylesheet" href="/src/css/style.css">
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
 </head>
 <body>
-
-        <h1>404</h1>
-        <p>Page Not Found</p>
-        <a href="/index.html">Go Home</a>
+    <header class="header">
+        <div class="header__elt">
+        <a href="/fr/index.html">
+        <img class="header__accueil" src="/public/icones/home.svg" alt="logo_accueil">
+        </a>
+        <p class="header__titre">Senseception</p>
+        <button 
+        aria-controls="mainNav"
+        @click="menuIsOpen = ! menuIsOpen"
+        class="header_menuBtn">
+        <img class="header__logo" src="/public/icones/Menu.svg" alt="Menu_hamburger">
+        </button>
+    
+        <nav
+        id="mainNav"
+        x-show="menuIsOpen"
+        x-transition.duration.800ms
+        class="menu">
+    
+        <ul class="categorie">
+          <li class="text_menu"><a href="/fr/replique.html">Réplique</a></li>
+          
+          <li class="text_menu"><a href="/fr/realisation.html">Réalisation</a></li>
+          
+          <li class="text_menu"><a href="/fr/inception.html">Inception</a></li>
+          
+          <li class="text_menu"><a href="/fr/musique.html">Côté musical</a></li>
+          
+          <li class="text_menu"><a href="/fr/glossaire.html">Glossaire</a></li>
+          
+          <li class="text_menu"><a href="/fr/autres_projets.html">Autres projets</a></li>
+          <li><div class="language-switcher">
+              <a href="/fr/autres_projets.html" class="language-switcher__link__fr">FR</a>
+              <a href="/en/other_projects.html" class="language-switcher__link__en">EN</a>
+              
+            </div>
+          </li>
+      
+      </ul>
+    
+        </nav>
+        </div>
+    </header>
+    <main>
+        <h2 class="titre">Une erreur est survenue</h2>
+        <h3 class="texte__404">Page Not Found</h3>
+        <div class="home">
+        <a href="/index.html">
+            <img src="/public/icones/bouton_404.svg" alt="bouton retour accueil">
+        </a>
+    </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__elt">
+        
+        
+        <a class="footer__lien" href="/fr/a_propos.html">
+        A propos
+        </a>
+    
+        <p class="footer__texte--m">Lola Roth MMI B1</p>
+    
+        <p class="footer__texte--p">
+          Projet réalisé dans le cadre d’un exercice pédagogique au département MMi
+          de Montbéliard
+        </p>
+    
+        <a class="footer__lien" href="/fr/contact.html">
+        Contact
+        </a>
+        <hr>
+    
+        <p class="footer__texte">
+          IUT de Belfort – Montbéliard Place Tharradin, 25200 Montbéliard.
+          lolaroth08@gmail.com
+        </p>
+        </div>
+        <div class="footer__logos">
+        <a href="https://www.instagram.com/mmi_montbeliard/?hl=en">
+            <img src="/public/icones/instagram.svg" alt="logo_instagram">
+        </a>
+    
+        <a href="https://mmimontbeliard.com/">
+            <img src="/public/icones/MMI_blanc.svg" alt="logo_departement_MMI">
+        </a>
+    
+        <a href="https://twitter.com/MMImontbeliard">
+            <img src="/public/icones/twitter.svg" alt="logotwitter">
+        </a>
+        </div>
+      </footer>  
 </body>
 </html>

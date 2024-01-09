@@ -1,0 +1,16 @@
+.texte__404{
+    font-family: Mulish;
+    font-size: var(--title-l);
+    color: var(--blanc-texte);
+    margin-top: 20vw;
+    text-align: center;
+    justify-content: center;
+}
+
+.home{
+    display: flex;
+    margin-left: 45vw;
+    margin-top: 45vw;
+    margin-bottom: 50vw;
+    align-items: center;
+}
