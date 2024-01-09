@@ -104,6 +104,9 @@
     font-size: var(--title-xl);
     list-style-type: none;
     line-height: 50px;
+    border-bottom: 1px solid white; /* Remplacez #000 avec la couleur de votre choix */
+  padding-bottom: 10px; /* Ajoutez un peu d'espace entre le texte et la ligne */
+  margin-bottom: 10px; /* Ajoutez un peu d'espace après la ligne */
 }
 
 .language-switcher{
