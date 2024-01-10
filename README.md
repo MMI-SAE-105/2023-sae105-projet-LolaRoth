@@ -2,7 +2,7 @@
 - NOM : Roth
 - PRÉNOM : Lola
 - URL du site :
-- URL FIGMA :
+- URL FIGMA : https://www.figma.com/file/7rFtM623O2jxOSdAX7fpGK/Maquettes-projet-individuel-%E2%80%94-Lola-Roth-(Copy)?type=design&node-id=1516%3A340&mode=design&t=gRm2ulyyYi0nnUsW-1
 
 # Structure de départ pour le projet individuel.
 
