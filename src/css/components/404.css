@@ -17,3 +17,20 @@
 
 /* css pour la page index a la racine des dossiers */
 
+.titre__404{
+    font-family: Mulish;
+    font-size: 35px;
+    text-align: center;
+    position: absolute;
+    color: var(--noir-texte);
+    top: 20%; /* Ajustez ces valeurs pour positionner le titre */
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centrer le titre sur l'image */
+}
+
+.home__404__btn{
+    position: absolute;
+    top: 30%;
+    left: 35%;
+}
+

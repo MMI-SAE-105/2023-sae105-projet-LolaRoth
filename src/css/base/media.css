@@ -89,3 +89,10 @@
     width: 30%;
     margin: 1%;
 }
+
+.img__404{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    max-width: 100%;
+}
