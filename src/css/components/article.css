@@ -28,9 +28,6 @@
     
 }
 
-
-
-
 .article__image__description{
     font-family: Mulish;
     font-size: var(--text-xs);
@@ -103,16 +100,15 @@
 
 
 .losange__g{
-    width: 30px;
-    margin-top: 20px;
+    width: var(--space3x);
+    margin-top: var(--space2x);
 }
 
 .losange__d{
-    width: 30px;
-    
+    width: var(--space3x);
     right: 0;
     float: right;
-    margin-left: 10px;
+    margin-left: var(--space1x);
 }
 
 .video__ba{

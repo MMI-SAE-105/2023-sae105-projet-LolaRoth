@@ -1,9 +1,9 @@
 .carroussel__image{
     width: 50%;
    margin: 1%;
-   padding: 10px;
+   padding: var(--space1x);
     border-radius: 5px;
-   margin-top: 20px;
+   margin-top: var(--space2x);
 }
 
 .carrousel_parent-ecrans {
@@ -71,9 +71,9 @@
     font-size: var(--text-xs);
     font-style: italic;
     color: var(--blanc-texte);
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-top: var(--space1x);
+    margin-bottom: var(--space1x);
+    margin-left: var(--space1x);
+    margin-right: var(--space1x);
     text-align: center;
 }
