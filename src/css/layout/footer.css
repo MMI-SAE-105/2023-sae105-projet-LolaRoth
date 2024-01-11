@@ -1,6 +1,6 @@
 .footer{
     background-color: var(--bleu);
-    
+    box-sizing: border-box;
     max-width: 100%;
     display: flex;
     justify-content: center;
